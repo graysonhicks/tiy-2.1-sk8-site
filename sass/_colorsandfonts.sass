@@ -1,0 +1,62 @@
+/* HEADER */
+
+.social-icons
+  li
+    color: white
+
+.subscribe
+
+  text-shadow: 1px 1px 2px rgb(59, 59, 59)
+  a
+    text-transform: uppercase
+    color: white
+    font-size: 12px
+  i
+    font-size: 4px
+    vertical-align: middle
+    margin-left: 10px
+
+.main-links
+  ul
+    li
+      background-color: $topnavbuttonscolor
+      @include bottomborder
+      color: white
+      text-transform: uppercase
+      a
+        color: white
+        &:hover
+          color: $topnavbuttonscolor
+
+/* CAROUSEL */
+
+#carousel-tony
+  border: 7px solid white
+
+/* ARTICLES */
+
+
+
+/* BOARDERS */
+.top-row-left
+  @include bottomborder
+  @include picture("../img/tonyboarder1.jpg")
+  @include boarderborder
+
+.top-row-right
+  @include picture("../img/tonyboarder2.png")
+  @include boarderborder
+
+.bottom-row-center
+  background-position: center
+  @include boarderborder
+  @include picture("../img/tonyboarder3.jpg")
+
+.boarders-right-center
+  @include boarderborder
+  @include picture("../img/tonyboarder4.jpg")
+
+
+/* BOARDS */
+
+/* CONTACT */

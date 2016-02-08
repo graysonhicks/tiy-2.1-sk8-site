@@ -2,4 +2,10 @@
   box-sizing: border-box
 
 body
-  background-image: url("img/bg.jpg")
+  @include darktint("../img/bg.jpg")
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+
+.main-content
+  padding-left: 0
