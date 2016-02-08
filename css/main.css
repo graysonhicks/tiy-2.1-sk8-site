@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url("img/bg.jpg"); }
+
+/* HEADER */
+/* CAROUSEL */
+.carousel img {
+  min-width: 100%;
+  max-height: 350px;
+  /* ARTICLES */
+  /* BOARDERS */
+  /* BOARDS */
+  /* CONTACT */ }
+  .carousel img .boarders-left img.img-thumbnail {
+    height: 200px; }
+
+/*# sourceMappingURL=main.css.map */
