@@ -3,7 +3,10 @@
   .container-fluid
     width: 95%
 
-  /* HEADER */
+    /* HEADER */
+
+  .subscribe
+    padding-left: 0px
 
   .main-links
     ul
@@ -13,23 +16,31 @@
         margin-left: 0px
         margin-right: 0px
 
-  /* TONY CAROUSEL */
+    /* TONY CAROUSEL */
+
+  #carousel-tony
+    margin-top: 20px
+    margin-bottom: 20px
+
+  .carousel-indicators
+    display: none
 
   .carousel-inner
     img
       min-width: 100%
-      max-height: 200px
+      max-height: 250px
       overflow: hidden
 
-  /* ARTICLES */
+    /* ARTICLES */
 
   .articles
     display: none
 
-  /* ARTICLE CAROUSEL */
+    /* ARTICLE CAROUSEL */
 
   #carousel-articles
     display: block
+    margin-bottom: 20px
     .carousel-inner
       max-height: 350px
       overflow: hidden
@@ -40,9 +51,42 @@
       box-shadow: none
     .caption
       p
-        text-align: center
+        max-height: 125px
+        text-align: left
         vertical-align: baseline
         &:nth-of-type(2)
+          text-align: center
           height: 125px
         .btn
           margin: 0 auto
+
+  /* Boarders */
+
+  .bottom-row-center,
+  .top-row-right,
+  .top-row-left,
+  .boarders-right-center
+    margin-left: 2%
+    margin-right: 2%
+
+  .boarders-right-center
+    background-position: 50% 50%
+    height: 200px
+    &:hover
+      background-position: 50% 50%
+    a
+      height: 200px
+    p
+      padding-top: 75px
+
+  /*Boards*/
+
+  .boards
+    margin-left: 2%
+    margin-right: 2%
+
+  /* Contact*/
+
+  .contact
+    margin-left: 2%
+    margin-right: 2%
