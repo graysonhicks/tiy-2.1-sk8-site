@@ -33,11 +33,31 @@ a.btn.btn-social-icons
           border-radius: none
           transition-duration: .25s
 
-/* CAROUSEL */
+/* TONY CAROUSEL */
 
 #carousel-tony
   border: 7px solid white
   @include dropshadow
+
+/* ARTICLE CAROUSEL */
+
+#carousel-articles
+  .caption
+    p
+      overflow: hidden
+      text-overflow: "..."
+    .btn
+      color: $topnavbuttonscolor
+      border-top: none
+      border-bottom: none
+      border-left: 2px solid $topnavbuttonscolor
+      border-right: 2px solid $topnavbuttonscolor
+      text-transform: uppercase
+      &:hover
+        color: white
+        background-color: $topnavbuttonscolor
+      transition-duration: .25s
+
 
 /* ARTICLES */
 

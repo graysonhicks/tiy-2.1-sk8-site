@@ -1,9 +1,48 @@
 @media (max-width: 600px)
+
+  .container-fluid
+    width: 95%
+
+  /* HEADER */
+
   .main-links
     ul
       li
-        width: 90%
+        width: 100%
         margin-top: 10px
-        margin-left: 5%
-        &:first-of-type
-          margin-left: 5%
+        margin-left: 0px
+        margin-right: 0px
+
+  /* TONY CAROUSEL */
+
+  .carousel-inner
+    img
+      min-width: 100%
+      max-height: 200px
+      overflow: hidden
+
+  /* ARTICLES */
+
+  .articles
+    display: none
+
+  /* ARTICLE CAROUSEL */
+
+  #carousel-articles
+    display: block
+    .carousel-inner
+      max-height: 350px
+      overflow: hidden
+    a.carousel-control
+      max-height: 350px
+    .thumbnail
+      border-radius: 0px
+      box-shadow: none
+    .caption
+      p
+        text-align: center
+        vertical-align: baseline
+        &:nth-of-type(2)
+          height: 125px
+        .btn
+          margin: 0 auto
