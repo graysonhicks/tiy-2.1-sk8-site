@@ -35,7 +35,18 @@
 
 /* ARTICLES */
 
-
+.article-containers
+  .caption
+    p
+      overflow: hidden
+      text-overflow: "..."
+    .btn
+      color: $topnavbuttonscolor
+      border-top: none
+      border-bottom: none
+      border-left: 2px solid $topnavbuttonscolor
+      border-right: 2px solid $topnavbuttonscolor
+      text-transform: uppercase
 
 /* BOARDERS */
 .top-row-left
@@ -56,7 +67,17 @@
   @include boarderborder
   @include picture("../img/tonyboarder4.jpg")
 
+.boarders
+  p
+    font-family: Futura
+    color: white
+    font-weight: bold
+    text-transform: uppercase
+    font-size: 30px
+
 
 /* BOARDS */
 
 /* CONTACT */
+.contact
+  background-color: white

@@ -6,7 +6,8 @@
 
 .subscribe
   padding-top: 10px
-  padding-left: 50px
+  padding-left: 65px
+  padding-right: 0px
 
 .social
   text-align: right
@@ -17,7 +18,6 @@
 .main-links
   ul
     float: none
-    margin: 0 auto
     li
       width: 24%
       text-align: center
@@ -39,16 +39,33 @@
 /* CAROUSEL */
 
 #carousel-tony
-  margin-bottom: 15px
+  margin-bottom: 50px
 
 .carousel img
   min-width: 100%
   max-height: 400px
 
+.carousel-indicators
+  bottom: -50px
+
   /* ARTICLES */
 
 .articles
-  height: 250px
+  height: 375px
+
+.article-containers
+  .thumbnail
+    height: 350px
+  .caption
+    p:first-of-type
+      height: 125px
+    p:nth-of-type(2)
+      text-align: center
+      vertical-align: baseline
+    .btn
+      margin: 0 auto
+
+
 
   /* BOARDERS */
 .top-row-left,
@@ -76,11 +93,33 @@
 .top-row-right,
 .bottom-row-center
   height: 200px
+  p
+    padding-top: 75px
 
 .boarders-right-center
   height: 410px
+  p
+    padding-top: 150px
 
+.boarders
+  p
+    text-align: center
+    vertical-align: middle
 
   /* BOARDS */
 
+.boards
+  margin-top: 15px
+
+.board-images
+  padding: 0px
+
   /* CONTACT */
+
+.contact
+  margin-top: 15px
+  margin-bottom: 15px
+
+
+.contact-form
+  padding-top: 15px

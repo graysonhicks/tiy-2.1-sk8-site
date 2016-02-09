@@ -17,7 +17,8 @@ body {
 
 .subscribe {
   padding-top: 10px;
-  padding-left: 50px; }
+  padding-left: 65px;
+  padding-right: 0px; }
 
 .social {
   text-align: right; }
@@ -26,8 +27,7 @@ body {
     padding-right: 0; }
 
 .main-links ul {
-  float: none;
-  margin: 0 auto; }
+  float: none; }
   .main-links ul li {
     width: 24%;
     text-align: center;
@@ -46,16 +46,30 @@ body {
 
 /* CAROUSEL */
 #carousel-tony {
-  margin-bottom: 15px; }
+  margin-bottom: 50px; }
 
 .carousel img {
   min-width: 100%;
-  max-height: 400px;
+  max-height: 400px; }
+
+.carousel-indicators {
+  bottom: -50px;
   /* ARTICLES */ }
 
 .articles {
-  height: 250px;
+  height: 375px; }
+
+.article-containers {
   /* BOARDERS */ }
+  .article-containers .thumbnail {
+    height: 350px; }
+  .article-containers .caption p:first-of-type {
+    height: 125px; }
+  .article-containers .caption p:nth-of-type(2) {
+    text-align: center;
+    vertical-align: baseline; }
+  .article-containers .caption .btn {
+    margin: 0 auto; }
 
 .top-row-left,
 .top-row-right,
@@ -81,11 +95,35 @@ body {
 .top-row-right,
 .bottom-row-center {
   height: 200px; }
+  .top-row-left p,
+  .top-row-right p,
+  .bottom-row-center p {
+    padding-top: 75px; }
 
 .boarders-right-center {
-  height: 410px;
-  /* BOARDS */
+  height: 410px; }
+  .boarders-right-center p {
+    padding-top: 150px; }
+
+.boarders {
+  /* BOARDS */ }
+  .boarders p {
+    text-align: center;
+    vertical-align: middle; }
+
+.boards {
+  margin-top: 15px; }
+
+.board-images {
+  padding: 0px;
   /* CONTACT */ }
+
+.contact {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.contact-form {
+  padding-top: 15px; }
 
 /* HEADER */
 .social-icons li {
@@ -117,6 +155,17 @@ body {
   border: 7px solid white; }
 
 /* ARTICLES */
+.article-containers .caption p {
+  overflow: hidden;
+  text-overflow: "..."; }
+.article-containers .caption .btn {
+  color: #B4292E;
+  border-top: none;
+  border-bottom: none;
+  border-left: 2px solid #B4292E;
+  border-right: 2px solid #B4292E;
+  text-transform: uppercase; }
+
 /* BOARDERS */
 .top-row-left {
   border-bottom: 2px solid #929091;
@@ -140,7 +189,16 @@ body {
   background-image: url("../img/tonyboarder4.jpg");
   background-size: cover; }
 
+.boarders p {
+  font-family: Futura;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 30px; }
+
 /* BOARDS */
 /* CONTACT */
+.contact {
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
