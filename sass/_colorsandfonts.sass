@@ -31,6 +31,7 @@ a.btn.btn-social-icons
         &:hover
           color: $topnavbuttonscolor
           border-radius: none
+          transition-duration: .25s
 
 /* CAROUSEL */
 
@@ -52,6 +53,10 @@ a.btn.btn-social-icons
       border-left: 2px solid $topnavbuttonscolor
       border-right: 2px solid $topnavbuttonscolor
       text-transform: uppercase
+      &:hover
+        color: white
+        background-color: $topnavbuttonscolor
+      transition-duration: .25s
 
 /* BOARDERS */
 
@@ -59,22 +64,34 @@ a.btn.btn-social-icons
   @include dropshadow
   @include picture("../img/tonyboarder1.jpg")
   @include boarderborder
+  &:hover
+    @include lighttint("../img/tonyboarder1.jpg")
 
 .top-row-right
   @include picture("../img/tonyboarder2.png")
   @include boarderborder
   @include dropshadow
+  &:hover
+    @include lighttint("../img/tonyboarder2.png")
+
 
 .bottom-row-center
   background-position: center
   @include boarderborder
   @include picture("../img/tonyboarder3.jpg")
   @include dropshadow
+  &:hover
+    @include lighttint("../img/tonyboarder3.jpg")
+    background-position: 50% 50%
+
 
 .boarders-right-center
   @include boarderborder
   @include picture("../img/tonyboarder4.jpg")
   @include dropshadow
+  &:hover
+    @include lighttint("../img/tonyboarder4.jpg")
+
 
 .boarders
   p

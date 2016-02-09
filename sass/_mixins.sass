@@ -1,6 +1,10 @@
 @mixin darktint($imageurl)
   background: linear-gradient(rgba(42, 44, 45, 0.8), rgba(42, 44, 45, 0.8)), url($imageurl)
 
+@mixin lighttint($imageurl)
+  background: linear-gradient(rgba(170, 171, 172, 0.6), rgba(170, 171, 172, 0.8)), url($imageurl)
+  background-size: cover
+
 @mixin bottomborder
   border-bottom: 2px solid $bottombordercolor
 

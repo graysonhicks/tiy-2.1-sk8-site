@@ -96,6 +96,13 @@ body {
 .top-row-right,
 .bottom-row-center {
   height: 200px; }
+  .top-row-left a,
+  .top-row-right a,
+  .bottom-row-center a {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    text-decoration: none; }
   .top-row-left p,
   .top-row-right p,
   .bottom-row-center p {
@@ -103,6 +110,11 @@ body {
 
 .boarders-right-center {
   height: 410px; }
+  .boarders-right-center a {
+    display: inline-block;
+    width: 100%;
+    height: 410px;
+    text-decoration: none; }
   .boarders-right-center p {
     padding-top: 150px; }
 
@@ -113,15 +125,15 @@ body {
     vertical-align: middle; }
 
 .boards {
-  margin-top: 15px; }
+  margin-top: 35px; }
 
 .board-images {
   padding: 0px;
   /* CONTACT */ }
 
 .contact {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 50px;
   padding: 20px; }
   .contact p {
     padding-bottom: 20px; }
@@ -163,7 +175,8 @@ a.btn.btn-social-icons {
     color: white; }
     .main-links ul li a:hover {
       color: #B4292E;
-      border-radius: none; }
+      border-radius: none;
+      transition-duration: 0.25s; }
 
 /* CAROUSEL */
 #carousel-tony {
@@ -180,7 +193,11 @@ a.btn.btn-social-icons {
   border-bottom: none;
   border-left: 2px solid #B4292E;
   border-right: 2px solid #B4292E;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition-duration: 0.25s; }
+  .article-containers .caption .btn:hover {
+    color: white;
+    background-color: #B4292E; }
 
 /* BOARDERS */
 .top-row-left {
@@ -188,12 +205,18 @@ a.btn.btn-social-icons {
   background-image: url("../img/tonyboarder1.jpg");
   background-size: cover;
   border: 4px solid white; }
+  .top-row-left:hover {
+    background: linear-gradient(rgba(170, 171, 172, 0.6), rgba(170, 171, 172, 0.8)), url("../img/tonyboarder1.jpg");
+    background-size: cover; }
 
 .top-row-right {
   background-image: url("../img/tonyboarder2.png");
   background-size: cover;
   border: 4px solid white;
   box-shadow: 3px 3px #929091; }
+  .top-row-right:hover {
+    background: linear-gradient(rgba(170, 171, 172, 0.6), rgba(170, 171, 172, 0.8)), url("../img/tonyboarder2.png");
+    background-size: cover; }
 
 .bottom-row-center {
   background-position: center;
@@ -201,12 +224,19 @@ a.btn.btn-social-icons {
   background-image: url("../img/tonyboarder3.jpg");
   background-size: cover;
   box-shadow: 3px 3px #929091; }
+  .bottom-row-center:hover {
+    background: linear-gradient(rgba(170, 171, 172, 0.6), rgba(170, 171, 172, 0.8)), url("../img/tonyboarder3.jpg");
+    background-size: cover;
+    background-position: 50% 50%; }
 
 .boarders-right-center {
   border: 4px solid white;
   background-image: url("../img/tonyboarder4.jpg");
   background-size: cover;
   box-shadow: 3px 3px #929091; }
+  .boarders-right-center:hover {
+    background: linear-gradient(rgba(170, 171, 172, 0.6), rgba(170, 171, 172, 0.8)), url("../img/tonyboarder4.jpg");
+    background-size: cover; }
 
 .boarders p {
   font-family: Futura;
@@ -240,5 +270,13 @@ a.btn.btn-social-icons {
   text-transform: uppercase; }
 .contact-form textarea[placeholder] {
   text-transform: uppercase; }
+
+@media (max-width: 600px) {
+  .main-links ul li {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 5%; }
+    .main-links ul li:first-of-type {
+      margin-left: 5%; } }
 
 /*# sourceMappingURL=main.css.map */
