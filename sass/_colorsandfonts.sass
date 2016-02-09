@@ -4,8 +4,10 @@
   li
     color: white
 
-.subscribe
+a.btn.btn-social-icons
+  @include dropshadow
 
+.subscribe
   text-shadow: 1px 1px 2px rgb(59, 59, 59)
   a
     text-transform: uppercase
@@ -20,18 +22,21 @@
   ul
     li
       background-color: $topnavbuttonscolor
-      @include bottomborder
+      @include dropshadow
       color: white
       text-transform: uppercase
       a
+        border-radius: 0%
         color: white
         &:hover
           color: $topnavbuttonscolor
+          border-radius: none
 
 /* CAROUSEL */
 
 #carousel-tony
   border: 7px solid white
+  @include dropshadow
 
 /* ARTICLES */
 
@@ -49,23 +54,27 @@
       text-transform: uppercase
 
 /* BOARDERS */
+
 .top-row-left
-  @include bottomborder
+  @include dropshadow
   @include picture("../img/tonyboarder1.jpg")
   @include boarderborder
 
 .top-row-right
   @include picture("../img/tonyboarder2.png")
   @include boarderborder
+  @include dropshadow
 
 .bottom-row-center
   background-position: center
   @include boarderborder
   @include picture("../img/tonyboarder3.jpg")
+  @include dropshadow
 
 .boarders-right-center
   @include boarderborder
   @include picture("../img/tonyboarder4.jpg")
+  @include dropshadow
 
 .boarders
   p
@@ -75,9 +84,31 @@
     text-transform: uppercase
     font-size: 30px
 
+.thumbnail
+  @include dropshadow
 
 /* BOARDS */
+
+.board-images
+  img
+    @include dropshadow
 
 /* CONTACT */
 .contact
   background-color: white
+  @include dropshadow
+
+.contact-form
+  button
+    background-color: $topnavbuttonscolor
+    border: none
+    border-radius: 0px
+    color: white
+    text-transform: uppercase
+  input,
+  textarea
+    box-shadow: inset 2px 2px $bottombordercolor
+  input[placeholder]
+    text-transform: uppercase
+  textarea[placeholder]
+    text-transform: uppercase

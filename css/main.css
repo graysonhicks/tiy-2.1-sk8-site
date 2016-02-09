@@ -50,7 +50,8 @@ body {
 
 .carousel img {
   min-width: 100%;
-  max-height: 400px; }
+  max-height: 400px;
+  overflow: hidden; }
 
 .carousel-indicators {
   bottom: -50px;
@@ -120,14 +121,26 @@ body {
 
 .contact {
   margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding: 20px; }
+  .contact p {
+    padding-bottom: 20px; }
+  .contact ul {
+    padding-bottom: 50px; }
 
 .contact-form {
   padding-top: 15px; }
+  .contact-form button {
+    margin-top: 25px;
+    width: 225px;
+    height: 40px; }
 
 /* HEADER */
 .social-icons li {
   color: white; }
+
+a.btn.btn-social-icons {
+  box-shadow: 3px 3px #929091; }
 
 .subscribe {
   text-shadow: 1px 1px 2px #3b3b3b; }
@@ -142,17 +155,20 @@ body {
 
 .main-links ul li {
   background-color: #B4292E;
-  border-bottom: 2px solid #929091;
+  box-shadow: 3px 3px #929091;
   color: white;
   text-transform: uppercase; }
   .main-links ul li a {
+    border-radius: 0%;
     color: white; }
     .main-links ul li a:hover {
-      color: #B4292E; }
+      color: #B4292E;
+      border-radius: none; }
 
 /* CAROUSEL */
 #carousel-tony {
-  border: 7px solid white; }
+  border: 7px solid white;
+  box-shadow: 3px 3px #929091; }
 
 /* ARTICLES */
 .article-containers .caption p {
@@ -168,7 +184,7 @@ body {
 
 /* BOARDERS */
 .top-row-left {
-  border-bottom: 2px solid #929091;
+  box-shadow: 3px 3px #929091;
   background-image: url("../img/tonyboarder1.jpg");
   background-size: cover;
   border: 4px solid white; }
@@ -176,18 +192,21 @@ body {
 .top-row-right {
   background-image: url("../img/tonyboarder2.png");
   background-size: cover;
-  border: 4px solid white; }
+  border: 4px solid white;
+  box-shadow: 3px 3px #929091; }
 
 .bottom-row-center {
   background-position: center;
   border: 4px solid white;
   background-image: url("../img/tonyboarder3.jpg");
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: 3px 3px #929091; }
 
 .boarders-right-center {
   border: 4px solid white;
   background-image: url("../img/tonyboarder4.jpg");
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: 3px 3px #929091; }
 
 .boarders p {
   font-family: Futura;
@@ -196,9 +215,30 @@ body {
   text-transform: uppercase;
   font-size: 30px; }
 
+.thumbnail {
+  box-shadow: 3px 3px #929091; }
+
 /* BOARDS */
+.board-images img {
+  box-shadow: 3px 3px #929091; }
+
 /* CONTACT */
 .contact {
-  background-color: white; }
+  background-color: white;
+  box-shadow: 3px 3px #929091; }
+
+.contact-form button {
+  background-color: #B4292E;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  text-transform: uppercase; }
+.contact-form input,
+.contact-form textarea {
+  box-shadow: inset 2px 2px #929091; }
+.contact-form input[placeholder] {
+  text-transform: uppercase; }
+.contact-form textarea[placeholder] {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=main.css.map */
