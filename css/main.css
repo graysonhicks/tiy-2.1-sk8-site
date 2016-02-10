@@ -294,6 +294,32 @@ a.btn.btn-social-icons {
   text-transform: uppercase; }
 .contact-form textarea[placeholder] {
   text-transform: uppercase; }
+.contact-form span {
+  border-radius: none;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  background: #B4292E;
+  left: 99%;
+  top: 52px;
+  width: 160px;
+  padding: 7px 5px;
+  color: #fff;
+  margin-right: 2%; }
+.contact-form span:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #B4292E;
+  border-width: 8px;
+  margin-top: -8px; }
 
 @media (max-width: 1208px) {
   .subscribe {
@@ -315,7 +341,10 @@ a.btn.btn-social-icons {
     padding-right: 4px; }
 
   .subscribe {
-    padding-left: 40px; } }
+    padding-left: 40px; }
+
+  .contact-form span {
+    left: 85%; } }
 @media (max-width: 816px) {
   .main-links ul li .fa-minus {
     padding-left: 1px;
@@ -412,7 +441,10 @@ a.btn.btn-social-icons {
   /* Contact */
   .contact {
     margin-left: 2%;
-    margin-right: 2%; } }
+    margin-right: 2%; }
+
+  .contact-form span {
+    left: 75%; } }
 @media (max-width: 500px) {
   .main-content {
     margin-left: 0px; }
@@ -438,6 +470,11 @@ a.btn.btn-social-icons {
   .contact h2 {
     text-align: center; }
   .contact .bottom-social-icons {
-    text-align: center; } }
+    text-align: center; }
+  .contact .contact-form span {
+    top: -50px;
+    left: 16%; }
+  .contact .contact-form span:after {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
